@@ -6,34 +6,68 @@
     <style>
         ul {
             /* list-style-type: circle;  */
-            list-style-image: url(images/smiley.gif)};
+            list-style-image: url("images/smiley.gif");
+        }
+
+        body {
+            background-image: url("images/music.gif");
+        }
+
+        .bigcontainer {
+            position: relative;
+            margin-left:auto;
+            margin-right:auto;
+            text-align:center;
+            z-index:1;
+        }
+        .littlecontainer {
+            position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        top: 0%; 
+        text-align: center;
+        color:white;
+        }
+
+        img {
+            float: none;
+            position: relative;
+        
         }
     </style>
 </head>
  <body> 
      <h2>My Courses</h2> 
+     Spring 2020
      <ul>
-        <li>Spring 2020
-            <ul>
-                <li>International Trade</li>
-                <li>Launch Grow Ventures</li>
-                <li>Managerial Economics</li>
-                <li>Marketing Research</li>
+        <li>International Trade</li>
+        <li>Launch Grow Ventures</li>
+        <li>Managerial Economics</li>
+        <li>Marketing Research</li>
             </ul>
-         <li>Summer 2020
-            <ul>
-                <li>Web Tech</li>
-                <li>Foundations of Project Management</li>
-                <li>History and Ethics of Capitalism</li>
-            </ul>
+    Summer 2020
+        <ul>
+            <li>Web Tech</li>
+            <li>Foundations of Project Management</li>
+            <li>History and Ethics of Capitalism</li>
+        </ul>
     </ul>
     <h2>2018 Fifa World Cup Ranking</h2> 
     <ol>
-        <li>France</li>
-        <li>Croatia</li>
-        <li>Belgium</li>
-        <li>England</li>
-    </l>
+        <li><img src="/images/France.png" height="30px"> France</li>
+        <li><img src="/images/Croatia.png" height="30px"> Croatia</li>
+        <li><img src="/images/Belgium.png" height="30px"> Belgium</li>
+        <li><img src="/images/England.png" height="30px"> England</li>
+    </ol>
+<div class="bigcontainer">
+    <img src="images/beaver.jpg">
+        <div class="littlecontainer">
+            <h3>Go Beavers!</h3>
+        </div>
+</div>
+
 </body> 
 </html>       
      

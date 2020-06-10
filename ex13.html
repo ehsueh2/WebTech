@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ex13</title>
+  </head>
+  <body>
+    <h1>Manipulating Styles and Images</h1>
+    <div class="myDiv">
+      <img class="specialimg" src="images/tiger1.jpg" alt="Tiger 1" title="Tiger is walking" width="400" />
+    </div>
+
+    <div class="myDiv">
+        <img class="specialimg" src="images/elephant.jpg" alt="Elephant" title="Pic of elephant" width="400" />
+    </div>
+
+
+    <script>
+
+/* 
+//Test for querySelectorAll
+        function enlargeImage() 
+        {
+            const myImg = document.querySelector(".specialimg");
+                let w = myImg.width;
+                w = w*1.5;
+                myImg.width = w;
+                myImg.style.border = "thick solid #0000FF";
+        }
+      document.querySelectorAll(".specialimg").forEach(specialimg => {
+          specialimg.addEventListener("mouseover", function () {
+              enlargeImage();}
+      
+
+      );
+
+      function shrinkImage() 
+      {
+            const myImg = document.querySelector(".specialimg");
+                let w = myImg.width;
+                w = w*2/3;
+                myImg.width = w;
+                myImg.style.border = "thick solid #FFFFFF";
+      }
+      document.querySelector(".specialimg").addEventListener("mouseout", function () {
+        shrinkImage();
+      });
+
+*/
+
+        function enlargeImage() {
+        let myImg = document.querySelector(".specialimg");
+            let w = myImg.width;
+            w = w*1.5;
+            myImg.width = w;
+            myImg.style.border = "thick solid #0000FF";
+      }
+      document.querySelector(".specialimg").addEventListener("mouseover", function () {
+        enlargeImage();
+      });
+
+      function shrinkImage() {
+        let myImg = document.querySelector(".specialimg");
+            let w = myImg.width;
+            w = w*2/3;
+            myImg.width = w;
+            myImg.style.border = "thick solid #FFFFFF";
+      }
+      document.querySelector(".specialimg").addEventListener("mouseout", function () {
+        shrinkImage();
+      });
+    </script>
+  </body>
+</html>

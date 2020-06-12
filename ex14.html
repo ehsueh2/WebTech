@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ex14</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      img {
+        border: 10px ridge gold;
+        display: block;
+      }
+      div, img{
+        width: 500px;
+        margin: 30px auto;
+      }
+    </style>
+    <script>
+        function myFunction() {
+            var player = prompt("Enter the last name of your favorite Celtics player", "Last name only");
+                if (player == "Brown") 
+                {
+                    document.getElementById("myImg").src = "images/jaylen-brown.png"
+                } 
+                
+                else if (player == "Fall") 
+                {
+                    document.getElementById('myImg').src="images/tacko-fall.png"
+                } 
+                
+                else if (player == "Tatum") 
+                {
+                    document.getElementById('myImg').src="images/jayson-tatum.png"
+                } 
+                
+                else if (player == "Walker") 
+                {
+                    document.getElementById('myImg').src="images/kemba-walker.png"
+                } 
+                
+                else 
+                {
+                    window.alert("Input is incorrect")
+                    }
+        }
+                
+    </script>
+  </head>
+  <body>
+    <h1>Changing image using user input</h1>
+    <img src="images/jaylen-brown.png" onclick="myFunction()" alt="Click here to choose the image" title="" id="myImg" />
+
+    <div>
+      Enter the last name of your favoriate Celtics player
+      <ul>
+        <li>Jaylen Brown</li>
+        <li>Tacko Fall</li>
+        <li>Jayson Tatum</li>
+        <li>Kemba Walker</li>
+      </ul>
+    </div>
+  </body>
+</html>

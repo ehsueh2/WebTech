@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>HW2-New York Times Header</title>
+    <style type="text/css">
+       body {
+           font-family:'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+           font-size:9pt;
+       }
+       .capbold {
+           font-family:'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+           font-weight:bold;
+           font-size:9pt;
+       }
+       .thirdrow {
+           font-family:'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+           font-size:9pt;
+       }
+       div {
+           line-height:1.75em;
+       }
+       h1 {
+           text-align:center;
+       }
+       .icon {
+           width:25px;
+       }
+       .uppercase:hover, .capbold:hover {
+           background-color:#D3D3D3;
+       }
+       #one:hover, #two:hover, #three:hover, #four:hover, #five:hover, #six:hover, #seven:hover, #eight:hover, #nine:hover, #ten:hover,  #eleven:hover, #twelve:hover, #thirteen:hover, #fourteen:hover, #fifteen:hover, #sixteen:hover, #seventeen:hover, #eighteen:hover{
+        background-color:#D3D3D3;
+       }
+       .alignleft {
+           text-align:left;
+           vertical-align:bottom;
+       }
+       .alignright {
+           text-align:right;
+           vertical-align:bottom;
+       }
+       /* Logo settings */
+       .logo {
+           display: block;
+           margin: 0 auto;
+           padding-top:1.2em;
+       }
+       /* Table settings */
+       table {
+           width:75%;
+           margin: 0 auto;
+       }
+       tr {
+           width:75%;
+           margin: 0 auto;
+       }
+       #secondrowborder {
+           border-bottom-color:#E0E0E0;
+           border-bottom-style:solid;
+       }
+       #thirdrowborder {
+           border-bottom-color:#303030;
+           border-bottom-style:solid;
+           width:70%;
+           text-align:center;
+       }
+       /* Button settings */
+       button {
+        background-color:#303030 /*dark grey*/;
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        padding:0.5em;
+        border-radius:0.2em;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       }
+       /* Hyperlink settings */
+       a {
+           color:black;
+           text-decoration:none;
+       }
+     </style>
+  </head>
+  <body>
+    <table>
+        <!--First row of NYT header, including hamburger menu and search-->
+        <tr>
+            <div class="iconbox">
+                <td width="2.5%"><a href=""><img src="images/nythamburger.jpg" class="icon"></a></td>
+            </div>
+            <div class="iconbox">
+                <td width="2.5%"><a href=""><img src="images/nytsearch.jpg" class="icon"></a></td>
+            </div>
+            <td width=auto></td>
+            <td width="2.5%" class="capbold">ENGLISH</td>
+            <td width="2.5%" class="uppercase">ESPAÑOL</td>
+            <td width="2.5%" class="uppercase">中文</td>
+            <td width=auto></td>
+            <td width="5%"><button type="button">Log In</button></td>
+        </tr>
+    </table>
+    <hr>
+    <table id="secondrowborder">
+        <!--Second row of NYT header-->
+        <tr>
+            <td width="30%" class="alignleft">Sunday, June 14th, 2020</td>
+            <td width="auto"><a href=""><img src="images/nytlogo.JPG" width="55%" class="logo"></a></td>
+            <td width="30%" class="alignright">Today's Paper</td>
+        </tr>
+    </table>
+    <table id="thirdrowborder">
+        <!--Second row of NYT header-->
+        <tr class="thirdrow">
+            <td width="auto" id="one"><a href="">World</a></td>
+            <td width="auto" id="two"><a href="">U.S.</a></td>
+            <td width="auto" id="three"><a href="">Politics</a></td>
+            <td width="auto" id="four"><a href="">N.Y.</a></td>
+            <td width="auto" id="five"><a href="">Business</a></td>
+            <td width="auto" id="six"><a href="">Opinion</a></td>
+            <td width="auto" id="seven"><a href="">Tech</a></td>
+            <td width="auto" id="eight"><a href="">Health</a></td>
+            <td width="auto" id="nine"><a href="">Sports</a></td>
+            <td width="auto" id="ten"><a href="">Arts</a></td>
+            <td width="auto" id="eleven"><a href="">Books</a></td>
+            <td width="auto" id="twelve"><a href="">Style</a></td>
+            <td width="auto" id="thirteen"><a href="">Food</a></td>
+            <td width="auto" id="fourteen"><a href="">Travel</a></td>
+            <td width="auto" id="fifteen"><a href="">Magazine</a></td>
+            <td width="auto" id="sixteen"><a href="">T Magazine</a></td>
+            <td width="auto" id="seventeen"><a href="">Real Estate</a></td>
+            <td width="auto" id="eighteen"><a href="">Video</a></td>
+        </tr>
+    </table>
+  </body>
+</html>
+
+<!-- 
+“I, Elina, pledge my honor that I have neither received nor provided unauthorized assistance during the completion of this work"
+-->

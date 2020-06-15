@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>HW2-2</title>
+    <style type="text/css">
+       body {
+           font-family:Arial, Helvetica, sans-serif;
+       }
+       div {
+           line-height:1.75em;
+       }
+       h1 {
+           text-align:center;
+       }
+       form {
+           width:40em;
+           padding:0.5em;
+           margin-left:auto;
+           margin-right:auto;
+       }
+       fieldset {
+           border-style:solid;
+           border-color:lightgrey;
+           padding:0.5em;
+           margin:0.5em;
+       }
+       input[type="radio"] {
+            margin-right: 0.5em;
+        }
+        legend {
+            font-weight:bold;
+        }
+
+     </style>    
+  </head>
+  <body>
+    <h1>Customer Feedback</h1>
+    <form action="#">
+        <fieldset>
+          <legend>Your Information:</legend>
+            <div>
+                <label for="name">Name:</label>
+                    <input
+                    type="text"
+                    name="name"
+                    maxlength="100"
+                    placeholder="Enter your name here"
+                    />
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                    <input
+                    type="text"
+                    name="email"
+                    maxlength="100"
+                    placeholder="Enter your email here"
+                    />
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Your Review:</legend>
+            <div>
+                <div>
+                <label for="prod">Which product did you purchase?</label>
+                <select name="prod" id="prod-select">
+                <option value="pro">AirPods Pro</option>
+                <option value="regwcase">Airpods with Wireless Charging Case</option>
+                <option value="regccase">Airpods with Charging Case</option>
+                </select>
+                </div>
+            </div>
+            <div>
+                What did you think of this project:
+                <br>
+                <input type="radio" name="rating" value="great" /><label>Great</label>
+                <input type="radio" name="rating" value="awesome" /><label>Awesome</label>
+                <input type="radio" name="rating" value="good" /><label>Good</label>
+            </div>
+            <div>
+                <div>
+                    <label for="comments">Comments:</label>
+                </div>
+                <div>
+                    <textarea
+                    id="comments"
+                    name="comments"
+                    rows="5"
+                    cols="60%"
+                    placeholder=""></textarea>
+                </div>
+            </div>
+            <div>
+                <input type="checkbox" name="emailupdates" value="emailupdates" checked/>
+                <label for="emailupdates">Sign me up for email updates</label>
+            </div>
+            <!-- section for submit/reset buttons-->
+            <div>
+                <button type="submit" name="submit-button">Submit</button>
+                <button type="reset" name="reset-button">Reset</button>
+            </div>
+          </fieldset>
+
+      </form>
+ 
+  </body>
+</html>
+
+<!-- 
+“I, Elina, pledge my honor that I have neither received nor provided unauthorized assistance during the completion of this work"
+-->

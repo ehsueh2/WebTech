@@ -3,40 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ex 08-1</title> 
+    <title>HW 2-1</title> 
     <style> 
         table {
             border:2px solid lightgrey; 
             width:50%; 
-            margin-right:auto; margin-left:auto; 
+            margin-right:auto; margin-left:auto;
+            border-collapse: collapse;
+        }
+        th {
+            border:2px solid lightgrey;
+            border-collapse: collapse;
+            }
+
+        td {
+            border:2px solid lightgrey;
+            border-collapse: collapse;
         }
         body {
             text-align: center;
             font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.85em;
         }
-            
+        button {
+            background-image:linear-gradient(#51a9ee,#147bcd);
+            color:white;
+            border-radius:2px;
+            border:none;
+        }   
+        a {
+            color:white;
+            text-decoration: none;
+        }
+        caption {
+            font-size: 1.75em;
+            padding:0.35em;
+  
+        }
+        #discount {
+            color:red;
+            font-weight:bold;
+            line-height:0.05px;
+        }
     </style> 
     
  </head> 
- <body> 
-     <caption>
-         AirPods 
-     </caption>
+ <body>
+
     <table>
-         <tr>
-            <td width="15%">AirPods Pro</td> <td width="30%"><img src="images/airpods-pro.jpg"><td width="30%">AirPods Pro</td> <td width="10%">$249</td> <td width="10%"><a href="https://www.apple.com/shop/product/MWP22AM/A/airpods-pro">Buy</a></td>
+        <caption>
+            AirPods 
+        </caption> 
+         <tr height="50%">
+            <td width="15%"><b>AirPods Pro</b></td> <td width="30%"><img src="images/airpods-pro.jpg" width="150px"><td width="30%">AirPods Pro</td> <td width="10%">$249.00</td> <td width="10%"><button type="button"><a href="https://www.apple.com/shop/product/MWP22AM/A/airpods-pro">Buy</a></button></td>
         </tr>
-        <tr>
-            <td width="15%">AirPods</td> <td width="30%"><img src="images/airpods.jpg"><td width="30%">AirPods with Wireless Charging Case</td> <td width="10%">$199</td> <td width="10%"><a href="https://www.apple.com/shop/product/MRXJ2/airpods-with-wireless-charging-case">Buy</a></td>
+        <tr height="25%">
+            <td width="15%" rowspan="2"><b>AirPods</b></td> <td width="30%" rowspan="2"><img src="images/airpods.jpg" width="150px"><td width="30%">AirPods with Wireless Charging Case</td> <td width="10%">$199.00</td> <td width="10%"><button type="button"><a href="https://www.apple.com/shop/product/MRXJ2/airpods-with-wireless-charging-case">Buy</a></button></td>
         </tr>
-        <tr>
-            <td width="15%">Placeholder</td> <td width="30%">Item 1</td> <td width="30%">AirPods with Charging Case</td> <td width="10%">$159</td> <td width="10%"><a href="https://www.apple.com/shop/product/MV7N2/airpods-with-charging-case">Buy</a></td>
+        <tr height="25%">
+            </td> <td width="30%">AirPods with Charging Case</td> <td width="10%"><s>$159.00</s><p id="discount">$129.00</p></td> <td width="10%"><button type="button"><a href="https://www.apple.com/shop/product/MV7N2/airpods-with-charging-case">Buy</a></button></td>
         </tr>
+        
     </table>
-    <p>
-        This is the caption for the table above.
-    </p>
+    
     
 </body> 
 </html>       
      
+<!-- 
+“I, Elina, pledge my honor that I have neither received nor provided unauthorized assistance during the completion of this work"
+-->

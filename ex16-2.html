@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ex16-2</title>
+    <style>
+      form {
+        margin: 0 auto;
+        width: 50%;
+        padding: 30px;
+        font-family: Arial;
+        font-weight: bold;
+        background-color: Silver;
+      }
+
+      h1 {
+        text-align: center;
+        font-family: Arial;
+      }
+      h2 {
+        text-align: center;
+        font-family: Arial;
+      }
+      div {
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Ex16-2</h1>
+    <h2>Temperature Converter</h2>
+    <form id="form" action="" method="POST">
+        <div>
+            <label>
+                Celsius (&#176;C): <input name="c" type="text" size="10" value="">
+            </label>
+
+            <label>
+                Fahrenheit (&#176;F): <input name="f" type="text" size="10" value="">
+            </label>
+        </div>
+
+      <div>
+        <input name="convert" type="button" value="Convert" id="convert"/>
+        <input name="reset" type="reset" value="Reset" />
+      </div>
+    </form>
+    <script>
+
+function cf() {
+            const myForm = document.querySelector("form");
+            var degreesC = myForm["c"].value;
+            var degreesF = myForm["f"].value;
+
+        //validation
+        if (degreesC.length===0 && degreesF.length===0 ) {
+            alert("Nothing is filled out!")
+        } else if (isNaN(degreesC) || isNaN(degreesF)) {
+            alert("Make sure to put in numerical values!")
+        } else if (degreesC.length===0) {
+            //if function to test if Celcius is blank. If true, implied F has value, so convert F to C. If false, implies C has value, so convert C to F
+            myForm["c"].value = parseFloat(((degreesF-32)*(5/9)).toFixed(2))+"\u2103";
+        } else {
+
+            myForm["f"].value = parseFloat((degreesC*(9/5)+32).toFixed(2))+"\u2109";
+        }
+        }     
+
+        document.querySelector("#convert").onclick = function () {
+            cf();
+        }
+    </script>
+  </body>
+</html>

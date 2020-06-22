@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ex16-1</title>
+    <style>
+      form {
+        margin: 0 auto;
+        width: 80%;
+        padding: 30px;
+        font-family: Arial;
+        font-weight: bold;
+        background-color: Silver;
+      }
+
+      h1 {
+        text-align: center;
+        font-family: Arial;
+      }
+      div {
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Processing form inputs</h1>
+    <form id="form" action="" method="POST">
+      <div>
+        <label
+          >Enter your name: <input name="name" type="text" size="20"
+        /></label>
+        <label>
+          Enter your age :
+          <input name="age" size="4" type="text" />
+        </label>
+      </div>
+      <div>
+        <label>
+          Select your gender:
+          <select name="gender">
+            <option value="Woman">Female</option>
+            <option value="Man">Male</option>
+          </select>
+        </label>
+      </div>
+      <div>
+        <label
+          >Your information will appear here: <br />
+          <textarea cols="40" name="result" rows="4" readonly></textarea>
+        </label>
+      </div>
+    <div>
+        <label
+          >Hide my age.
+          <input name="noAge" type="checkbox" id="box" />
+        </label>
+      </div>
+      <div>
+        <input name="submit" type="button" value="Show" id="submit"/>
+        <input name="reset" type="reset" value="Clear" />
+      </div>
+    </form>
+    <script>
+        function f() {
+
+            const myForm = document.querySelector("form");
+            const myName = myForm['name'].value;
+            const myAge = myForm["age"].value;
+            const myGender = myForm["gender"].value;
+            const myCheckbox = document.getElementById("box")
+
+            //validation
+            if (myName.length===0 || myAge.length===0) {
+                alert("Please enter both name and age")
+            }else if (isNaN(myAge)) {
+                alert("Please enter number for age")
+            }else if (myCheckbox.checked==true) {
+                let allInputs= "Name: " + myName + "\nAge: " + "\nGender: " + myGender;
+                myForm["result"].value = allInputs;
+            }else {
+                let allInputs= "Name: " + myName + "\nAge: " + myAge + "\nGender: " + myGender;
+                myForm["result"].value = allInputs;
+            }
+
+
+        }
+        document.querySelector("#submit").onclick = function () {
+            f();
+        }
+
+    </script>
+  </body>
+</html>
